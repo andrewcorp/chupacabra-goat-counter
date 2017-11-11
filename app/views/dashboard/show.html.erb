@@ -1,4 +1,9 @@
 <li>
+  Chupacabra
  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
 </li>
-Chupacabra
+<div>
+  <% @periods.each do |p| %>
+    <%= p.name %>
+  <% end %>
+</div>
