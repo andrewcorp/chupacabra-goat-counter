@@ -3,10 +3,10 @@
  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
 </li>
 <div>
-  <% @periods.each do |p| %>
-    <%= p.name %>
-    <% p.jobs.each do |j| %>
-      <%= j.name %>
-    <% end %>
-  <% end %>
+  <div id="app">
+    <input v-model="person" placeholder="person">
+    <input v-model="message" placeholder="message">
+    <br />
+    <span>{{person}} {{message}}</span>
+  </div>
 </div>
