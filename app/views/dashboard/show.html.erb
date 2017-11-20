@@ -5,5 +5,8 @@
 <div>
   <% @periods.each do |p| %>
     <%= p.name %>
+    <% p.jobs.each do |j| %>
+      <%= j.name %>
+    <% end %>
   <% end %>
 </div>
